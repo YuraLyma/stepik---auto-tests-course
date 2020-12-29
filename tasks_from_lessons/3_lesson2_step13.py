@@ -20,7 +20,7 @@ def registation(link):
 	driver.find_element_by_css_selector("[type='submit']").click()
 
 	try:
-		registration_text = WebDriverWait(driver, 2).until(EC.presence_of_element_located(By.TAGNAME, "h1")).text
+		registration_text = WebDriverWait(driver, 2).until(EC.presence_of_element_located(By.TAG_NAME, "h1")).text
 	except Exception:
 		raise
 
